@@ -1,15 +1,23 @@
-# Cobble Stones WSMBA — website, ready to publish
+# Cobble Stones WSMBA — website
 
-Static site. No build step, no server code, no dependencies. Upload the contents of this folder to the web root of any static host (Netlify, Vercel, Cloudflare Pages, GitHub Pages, cPanel `public_html`, S3, etc.) and point the domain at it.
+Static site, no build step. Live at https://cobblestones.org.uk via GitHub Pages (branch `main`, root).
+Edit → commit → push, and the site updates in about a minute.
 
 ## Files
-- `index.html` — home page (entry point)
-- `shop.html`, `media.html`, `bylaws.html`, `members.html`, `president.html` — sub-pages (currently "Coming Soon" placeholders)
+- `index.html` — home page
+- `shop.html`, `media.html`, `bylaws.html`, `members.html`, `president.html` — sub-pages (currently "Coming Soon")
+- `assets/css/site.css` — all styles (mobile rules at the bottom)
+- `assets/js/site.js` — menu, contact popup, copy buttons, scroll-reveal, crest tilt
+- `assets/img/` — optimised images (hero/section backgrounds in two sizes, crests, value photos, icons, favicon, share image)
+- `assets/fonts/` — Cinzel and Raleway (latin subsets, self-hosted)
+- `CNAME` — custom domain for GitHub Pages (managed by GitHub; do not delete)
 
-Every page is fully self-contained (images, fonts loader, scripts inlined), so no other files or folders are needed. All internal links are relative (`shop.html`, `index.html#about`, etc.) and work from the site root.
+## Editing the calendar
+In `index.html`, each event is one `.ev` block between `<!-- EVENTS:START -->` and `<!-- EVENTS:END -->`.
+Copy a block, change the day, month, title, meta line and the tag (`evtag`, `evtag evtag-social`, or `evtag evtag-charity`).
 
-## Notes
-- Pages load Google Fonts (Cinzel, Raleway) from fonts.googleapis.com at runtime; the site needs to be served over HTTP(S), not opened via `file://`, for best results.
-- Contact popup phone number is a placeholder (`01234 567 890`) pending the real number.
-- Email address used: `info@cobblestones.org.uk`.
-- No form handling or backend is required.
+## Placeholders still to fill
+- Contact phone number (`index.html`, two places: the `tel:` link and the Copy button's `data-copy`)
+- Footer Facebook / Instagram / Privacy links (`href="#"`)
+- Calendar events (sample data)
+- Sub-page content
