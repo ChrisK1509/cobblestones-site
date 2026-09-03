@@ -120,9 +120,9 @@ section,footer{scroll-margin-top:80px;}
 .evtext{flex:1;min-width:0;}
 .evtitle{font-size:15px;font-weight:600;color:#DBA928;margin-bottom:4px;}
 .evmeta{font-size:13px;color:#CBBE9E;}
-.evtag{font-size:11px;border-radius:999px;padding:6px 15px;min-width:96px;text-align:center;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;flex-shrink:0;background:transparent;border:1.5px solid rgba(228,218,196,.5);color:#E4DAC4;}
-.evtag-social{color:#CBBE9E;border-color:rgba(203,190,158,.5);}
-.evtag-charity{color:#DBA928;border-color:#DBA928;}
+.evtag{font-size:11px;border-radius:999px;padding:7px 16px;min-width:96px;text-align:center;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;flex-shrink:0;background:#4A8FD6;border:1.5px solid #4A8FD6;color:#0E2238;box-shadow:0 4px 12px rgba(0,0,0,.25);}
+.evtag-social{background:#E4DAC4;border-color:#E4DAC4;color:#132A45;}
+.evtag-charity{background:#DBA928;border-color:#DBA928;color:#132A45;}
 
 /* ---------- Join ---------- */
 #join{position:relative;padding:96px 48px;border-top:1px solid rgba(219,169,40,.16);background:#1a3858;text-align:center;overflow:hidden;}
